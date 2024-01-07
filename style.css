@@ -1,0 +1,87 @@
+/* Reset and basic styling */
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+.intro {
+    text-align: center;
+    position: relative; /* For positioning arrows */
+}
+
+.intro h1 {
+    font-size: 24px;
+    color: #333;
+}
+
+.intro img {
+    width: 150px;
+    border-radius: 50%;
+    margin-top: 20px;
+}
+
+.intro p {
+    font-size: 16px;
+    color: #666;
+}
+
+/* Arrow styles */
+.arrow {
+    display: inline-block;
+    margin: 10px;
+    font-size: 20px;
+    color: #007bff;
+    animation: pulse 1s infinite alternate;
+    cursor: pointer;
+    position: absolute;
+    top: 50%; /* Center vertically */
+    transform: translateY(-50%);
+}
+
+.left-arrow {
+    left: 10px;
+}
+
+.right-arrow {
+    right: 10px;
+}
+
+@keyframes pulse {
+    from {
+        transform: translateY(-50%) scale(1);
+        opacity: 0.7;
+    }
+    to {
+        transform: translateY(-50%) scale(1.2);
+        opacity: 1;
+    }
+}
